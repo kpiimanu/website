@@ -1,0 +1,76 @@
+
+/* font-family: Gloock */
+@font-face{
+    font-family: Gloock, sans-serif;
+    src: url('../Fonts/Gloock/Gloock-Regular.ttf');
+}
+
+/* font-family: Noto_Serif Bold */
+@font-face{
+    font-family: Noto Serif;
+    src: url('../Fonts/Noto_Serif/NotoSerif-Bold.ttf');
+    font-weight: 700;
+}
+
+/* font-family: Noto_Serif BoldItalic */
+@font-face{
+    font-family: Noto Serif;
+    src: url('../Fonts/Noto_Serif/NotoSerif-BoldItalic.ttf');
+    font-weight: 700;
+}
+
+/* font-family: Playfair_Display_Italic */
+@font-face{
+    font-family: Playfair Display Italic;
+    src: url('../Fonts/Playfair_Display/Playfair-Italic-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* font-family: Playfair_Display_VariableFont */
+@font-face{
+    font-family: Playfair_Display_VariableFont;
+    src: url('../Fonts/Playfair_Display/Playfair-VariableFont_wght.ttf');
+}
+
+/* font-family: Playfair_Display_Black */
+@font-face{
+    font-family: Playfair_Display_Black;
+    src: url('../Fonts/Playfair_Display/static/PlayfairDisplay-Black.ttf');
+}
+
+/* font-family: Playfair_Display_BlackItalic */
+@font-face{
+    font-family: Playfair_Display_BlackItalic;
+    src: url('../Fonts/Playfair_Display/static/PlayfairDisplay-BlackItalic.ttf');
+}
+
+/* font-family: Playfair_Display_Bold */
+@font-face{
+    font-family: Playfair_Display_Bold;
+    src: url('../Fonts/Playfair_Display/static/PlayfairDisplay-Bold.ttf');
+}
+
+/* font-family: Playfair_Display_BoldItalic */
+@font-face{
+    font-family: Playfair_Display_BoldItalic;
+    src: url('../Fonts/Playfair_Display/static/PlayfairDisplay-BoldItalic.ttf');
+}
+
+/* font-family: Playfair_Display_ExtraBold */
+@font-face{
+    font-family: Playfair_Display_ExtraBold;
+    src: url('../Fonts/Playfair_Display/static/PlayfairDisplay-ExtraBold.ttf');
+}
+
+/* font-family: Playfair_Display_Medium */
+@font-face{
+    font-family: Playfair_Display_Medium;
+    src: url('../Fonts/Playfair_Display/static/PlayfairDisplay-Medium.ttf');
+}
+
+/* font-family: Playfair_Display_Regular */
+@font-face{
+    font-family: Playfair_Display_Regular;
+    src: url('../Fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf');
+}

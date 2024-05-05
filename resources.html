@@ -16,44 +16,289 @@
     <!-- Custom Style -->
     <link rel="stylesheet" href="./CSS/style.css">
 
+    <!-- Custom Responsive Styles -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .nav {
+            background-color: #343a40;
+            padding: 10px 0;
+        }
+
+        .nav-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-brand a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        .toggle-icons {
+            cursor: pointer;
+        }
+
+        .nav-items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-link {
+            margin: 0 15px;
+        }
+
+        .nav-link a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .nav-link a:hover {
+            color: #ced4da;
+        }
+
+        .social a {
+            margin: 0 5px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .site-title {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .site-title h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #343a40;
+        }
+
+        .site-background {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .site-background h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #007bff;
+        }
+
+        .site-background h4 {
+            font-size: 18px;
+            margin-bottom: 5px;
+            color: #343a40;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .about-us, .newsletter, .instagram, .follow {
+            margin-bottom: 30px;
+        }
+
+        .about-us p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .newsletter input[type="text"] {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            width: 60%;
+        }
+
+        .newsletter button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .newsletter button:hover {
+            background-color: #0056b3;
+        }
+
+        .instagram img {
+            width: 100px;
+            margin: 5px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .follow p {
+            font-size: 16px;
+        }
+
+        .rights h4 {
+            font-size: 14px;
+        }
+
+        .move-up {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .move-up i {
+            font-size: 24px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-items {
+                display: none;
+            }
+
+            .toggle-collapse .toggle-icons {
+                display: block;
+            }
+
+            .toggle-collapse .toggle-icons i {
+                font-size: 24px;
+                cursor: pointer;
+            }
+
+            .nav-items.collapse {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: #343a40;
+                padding: 10px 0;
+                z-index: 99;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            .nav-link {
+                margin: 10px 0;
+            }
+
+            .social {
+                margin-top: 20px;
+            }
+
+            .social a {
+                margin: 0 10px;
+            }
+
+            .site-background {
+                padding: 15px;
+            }
+
+            .site-title h1 {
+                font-size: 28px;
+            }
+
+            .site-background h3 {
+                font-size: 20px;
+            }
+
+            .site-background h4 {
+                font-size: 16px;
+            }
+
+            .newsletter input[type="text"], .newsletter button {
+                width: 100%;
+            }
+
+            .newsletter {
+                margin-bottom: 20px;
+            }
+
+            .instagram, .follow {
+                margin-bottom: 20px;
+            }
+
+            .move-up {
+                bottom: 10px;
+                right: 10px;
+                padding: 8px;
+            }
+
+            .move-up i {
+                font-size: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
 
 <!-- Navigation -->
 <nav class="nav">
-    <div class="nav-menu flex-row">
-        <div class="nav-brand">
-            <a href="#" class="text-gray">Kilo Lani</a>
-        </div>
-        <div class="toggle-collapse">
-            <div class="toggle-icons">
-                <i class="fas fa-bars"></i>
+    <div class="container">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="#" class="text-gray">Kilo Lani</a>
             </div>
-        </div>
-        <div>
-            <ul class="nav-items">
-                <li class="nav-link">
-                    <a href="./index.html">Home</a>
-                </li>
-                <li class="nav-link">
-                    <a href="./inspiration.html">Inspiration</a>
-                </li>
-                <li class="nav-link">
-                    <a href="./resources.html">Resources</a>
-                </li>
-                <li class="nav-link">
-                    <a href="./projects.html">My Projects</a>
-                </li>
-                <li class="nav-link">
-                    <a href="#">Online Portfolio</a>
-                </li>
-            </ul>
-        </div>
-        <div class="social text-gray">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.youtube.com/channel/UC3TAP5vkfbnbsaEAU9zr6TQ"><i class="fab fa-youtube"></i></a>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div class="nav-items">
+                <ul>
+                    <li class="nav-link">
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="./inspiration.html">Inspiration</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="./resources.html">Resources</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="./projects.html">My Projects</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Online Portfolio</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social text-gray">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UC3TAP5vkfbnbsaEAU9zr6TQ"><i class="fab fa-youtube"></i></a>
+            </div>
         </div>
     </div>
 </nav>
@@ -64,18 +309,20 @@
 
     <!-- Site Title -->
     <section class="site-title">
-        <div class="site-background">
-            <h1>Resources</h1>
-            <p></p>
-            <h3>Online</h3>
-            <h4><a href="https://www.bishopmuseum.org/astronomy-resources/">https://www.bishopmuseum.org/astronomy-resources/</a></h4>
-            <h4><a href="https://www.hokulea.com/education-at-sea/polynesian-navigation/polynesian-non-instrument-wayfinding/hawaiian-star-lines/">https://www.hokulea.com/education-at-sea/polynesian-navigation/polynesian-non-instrument-wayfinding/hawaiian-star-lines/</a></h4>
-            <h4><a href="https://www.kaahelehawaii.com/kilo-hoku/">https://www.kaahelehawaii.com/kilo-hoku/</a></h4>
-            <h3>Literature</h3>
-            <h4>Bryan, Edwin Horace. Stars Over Hawaii. Petroglyph PressLtd, 2001.</h4>
-            <h4>Johnson, Rubellite Kawena. Kumulipo, the Hawaiian Hymn of Creation. Ku Paʻa Pub, 1981.</h4>
-            <h4>Johnson, Rubellite Kawena, and John Kaipo Mahelona. Nā Inoa Hōkū. Ku Paʻa Publishing, 1975.</h4>
-            <h4>Yuen, Leilehua. Moʻolelo Kilo Hōkū. Kuleana Kope, 2021.</h4>
+        <div class="container">
+            <div class="site-background">
+                <h1>Resources</h1>
+                <p>Explore online resources and literature for your astronomical journey.</p>
+                <h3>Online Resources</h3>
+                <h4><a href="https://www.bishopmuseum.org/astronomy-resources/">Bishop Museum - Astronomy Resources</a></h4>
+                <h4><a href="https://www.hokulea.com/education-at-sea/polynesian-navigation/polynesian-non-instrument-wayfinding/hawaiian-star-lines/">Hokulea - Hawaiian Star Lines</a></h4>
+                <h4><a href="https://www.kaahelehawaii.com/kilo-hoku/">Kaahele Hawaii - Kilo Hoku</a></h4>
+                <h3>Literature</h3>
+                <h4>Bryan, Edwin Horace. Stars Over Hawaii. Petroglyph Press Ltd, 2001.</h4>
+                <h4>Johnson, Rubellite Kawena. Kumulipo, the Hawaiian Hymn of Creation. Ku Paʻa Pub, 1981.</h4>
+                <h4>Johnson, Rubellite Kawena, and John Kaipo Mahelona. Nā Inoa Hōkū. Ku Paʻa Publishing, 1975.</h4>
+                <h4>Yuen, Leilehua. Moʻolelo Kilo Hōkū. Kuleana Kope, 2021.</h4>
+            </div>
         </div>
     </section>
     <!-- End Site Title -->
@@ -89,16 +336,14 @@
         <!-- About Me -->
         <div class="about-us">
             <h2>About Me</h2>
-            <p>My name is Keala and I initially created this kilo lani blog as my final project for Harvard University's CS50 Course.
-                I am hoping to continue to build on this blog as I not only pursue astronomy but programming as well.
-            </p>
+            <p>My name is Keala and I initially created this Kilo Lani blog as my final project for Harvard University's CS50 Course. I am hoping to continue to build on this blog as I not only pursue astronomy but programming as well.</p>
         </div>
         <!-- Newsletter -->
         <div class="newsletter">
             <h2>Newsletter</h2>
             <p>Stay Updated</p>
             <div class="form-element">
-                <input type="text" class="input-element" placeholder="Email">
+                <input type="text" class="input-element" placeholder="Enter your email">
                 <button class="btn form-btn" type="submit">Subscribe</button>
             </div>
         </div>
@@ -119,7 +364,7 @@
         <!-- Follow Me -->
         <div class="follow">
             <h2>Follow Me</h2>
-            <p>Lets Connect!</p>
+            <p>Let's Connect!</p>
             <div>
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
@@ -168,6 +413,20 @@
             }
         }
     })
+</script>
+
+<script>
+    // Toggle navigation menu
+    $('.toggle-collapse').on('click', function() {
+        $('.nav-items').toggleClass('collapse');
+    });
+
+    // Close navigation menu on click outside
+    $(document).on('click', function(e) {
+        if (!$(e.target).closest('.nav').length) {
+            $('.nav-items').removeClass('collapse');
+        }
+    });
 </script>
 
 </body>

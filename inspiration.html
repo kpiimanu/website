@@ -15,13 +15,12 @@
 
     <!-- Custom Style -->
     <link rel="stylesheet" href="./CSS/style.css">
-
 </head>
 <body>
 
 <!-- Navigation -->
 <nav class="nav">
-    <div class="nav-menu flex-row">
+    <div class="container flex-row">
         <div class="nav-brand">
             <a href="#" class="text-gray">Kilo Lani</a>
         </div>
@@ -30,23 +29,13 @@
                 <i class="fas fa-bars"></i>
             </div>
         </div>
-        <div>
-            <ul class="nav-items">
-                <li class="nav-link">
-                    <a href="./index.html">Home</a>
-                </li>
-                <li class="nav-link">
-                    <a href="./inspiration.html">Inspiration</a>
-                </li>
-                <li class="nav-link">
-                    <a href="./resources.html">Resources</a>
-                </li>
-                <li class="nav-link">
-                    <a href="./projects.html">My Projects</a>
-                </li>
-                <li class="nav-link">
-                    <a href="#">Online Portfolio</a>
-                </li>
+        <div class="nav-items">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./inspiration.html">Inspiration</a></li>
+                <li><a href="./resources.html">Resources</a></li>
+                <li><a href="./projects.html">My Projects</a></li>
+                <li><a href="#">Online Portfolio</a></li>
             </ul>
         </div>
         <div class="social text-gray">
@@ -64,19 +53,22 @@
 
     <!-- Site Title -->
     <section class="site-title">
-        <div class="site-background">
+        <div class="container">
             <h1>Things & People That Have Inspired Me Along The Way...</h1>
-            <p></p>
-            <h3>Stargazing with my Papa</h3>
-            <h3>Studying Physics</h3>
-            <h3>Learning the significance of the cosmos as it relates to Native Hawaiians/Polynesians</h3>
-            <h3>Polynesian Voyaging</h3>
-            <h3>Rubellite Kawena Johnson</h3>
-            <h3>Leilehua Yuen</h3>
-            <h3>Carl Sagan</h3>
-            <h3>National Geographic's Cosmos: A Spacetime Odyssey</h3>
-            <h3>National Geographic's Cosmos: Possible Worlds</h3>
-            <h3>My keiki</h3>
+            <div class="inspiration-list">
+                <ul>
+                    <li>Stargazing with my Papa</li>
+                    <li>Studying Physics</li>
+                    <li>Learning the significance of the cosmos as it relates to Native Hawaiians/Polynesians</li>
+                    <li>Polynesian Voyaging</li>
+                    <li>Rubellite Kawena Johnson</li>
+                    <li>Leilehua Yuen</li>
+                    <li>Carl Sagan</li>
+                    <li>National Geographic's Cosmos: A Spacetime Odyssey</li>
+                    <li>National Geographic's Cosmos: Possible Worlds</li>
+                    <li>My keiki</li>
+                </ul>
+            </div>
         </div>
     </section>
     <!-- End Site Title -->
@@ -87,14 +79,12 @@
 <!-- Footer -->
 <footer class="footer">
     <div class="container">
-        <!-- About Me -->
         <div class="about-us">
             <h2>About Me</h2>
             <p>My name is Keala and I initially created this kilo lani blog as my final project for Harvard University's CS50 Course.
                 I am hoping to continue to build on this blog as I not only pursue astronomy but programming as well.
             </p>
         </div>
-        <!-- Newsletter -->
         <div class="newsletter">
             <h2>Newsletter</h2>
             <p>Stay Updated</p>
@@ -103,7 +93,6 @@
                 <button class="btn form-btn" type="submit">Subscribe</button>
             </div>
         </div>
-        <!-- Instagram -->
         <div class="instagram">
             <h2>Instagram</h2>
             <div class="flex-row">
@@ -117,7 +106,6 @@
                 <img src="./kii/keala_kii/heihei.png" alt="insta6">
             </div>
         </div>
-        <!-- Follow Me -->
         <div class="follow">
             <h2>Follow Me</h2>
             <p>Lets Connect!</p>
@@ -129,14 +117,9 @@
             </div>
         </div>
     </div>
-    <!-- Rights -->
     <div class="rights flex-row">
-        <h4 class="text-gray">
-            Copyright ©2023 All rights reserved | Made by Keala Piimanu
-            <a href="#"></a>
-        </h4>
+        <h4 class="text-gray">Copyright ©2023 All rights reserved | Made by Keala Piimanu</h4>
     </div>
-    <!-- Move Up Button -->
     <div class="move-up">
         <span><i class="fas fa-arrow-circle-up-2x"></i></span>
     </div>

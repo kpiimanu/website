@@ -16,44 +16,291 @@
     <!-- Custom Style -->
     <link rel="stylesheet" href="./CSS/style.css">
 
+    <!-- Custom Responsive Styles -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #343a40;
+            padding: 10px 0;
+            position: relative;
+            z-index: 999;
+        }
+
+        .nav-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-brand a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        .toggle-icons {
+            cursor: pointer;
+        }
+
+        .nav-items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-link {
+            margin: 0 15px;
+        }
+
+        .nav-link a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .nav-link a:hover {
+            color: #ced4da;
+        }
+
+        .social a {
+            margin: 0 5px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .site-title {
+            background-color: #343a40;
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .site-title h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .blog-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .blog-content img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .blog-title {
+            margin-left: 20px;
+            text-align: left;
+        }
+
+        .blog-title h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .btn-blog {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-blog:hover {
+            background-color: #0056b3;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .footer h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .newsletter {
+            margin-bottom: 20px;
+        }
+
+        .form-element {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .input-element {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .form-btn {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .form-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .instagram {
+            margin-bottom: 20px;
+        }
+
+        .flex-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .flex-row img {
+            width: 100px;
+            margin: 5px;
+        }
+
+        .follow {
+            margin-bottom: 20px;
+        }
+
+        .rights {
+            margin-top: 20px;
+        }
+
+        .rights h4 {
+            font-size: 14px;
+        }
+
+        .move-up {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none;
+        }
+
+        .move-up i {
+            font-size: 24px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-items {
+                display: none;
+            }
+
+            .toggle-collapse .toggle-icons {
+                display: block;
+            }
+
+            .toggle-collapse .toggle-icons i {
+                font-size: 24px;
+                cursor: pointer;
+            }
+
+            .nav-items.collapse {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: #343a40;
+                padding: 10px 0;
+                z-index: 99;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            .nav-link {
+                margin: 10px 0;
+            }
+
+            .social {
+                margin-top: 20px;
+            }
+
+            .social a {
+                margin: 0 10px;
+            }
+        }
+    </style>
 </head>
 <body>
 
 <!-- Navigation -->
 <nav class="nav">
-    <div class="nav-menu flex-row">
-        <div class="nav-brand">
-            <a href="#" class="text-gray">Kilo Lani</a>
-        </div>
-        <div class="toggle-collapse">
-            <div class="toggle-icons">
-                <i class="fas fa-bars"></i>
+    <div class="container">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="#" class="text-gray">Kilo Lani</a>
             </div>
-        </div>
-        <div>
-            <ul class="nav-items">
-                <li class="nav-link">
-                    <a href="./index.html">Home</a>
-                </li>
-                <li class="nav-link">
-                    <a href="./inspiration.html">Inspiration</a>
-                </li>
-                <li class="nav-link">
-                    <a href="./resources.html">Resources</a>
-                </li>
-                <li class="nav-link">
-                    <a href="./projects.html">My Projects</a>
-                </li>
-                <li class="nav-link">
-                    <a href="#">Online Portfolio</a>
-                </li>
-            </ul>
-        </div>
-        <div class="social text-gray">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.youtube.com/channel/UC3TAP5vkfbnbsaEAU9zr6TQ"><i class="fab fa-youtube"></i></a>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div class="nav-items">
+                <ul>
+                    <li class="nav-link">
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="./inspiration.html">Inspiration</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="./resources.html">Resources</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="./projects.html">My Projects</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Online Portfolio</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social text-gray">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UC3TAP5vkfbnbsaEAU9zr6TQ"><i class="fab fa-youtube"></i></a>
+            </div>
         </div>
     </div>
 </nav>
@@ -64,16 +311,17 @@
 
     <!-- Site Title -->
     <section class="site-title">
-        <div class="site-background">
+        <div class="container">
             <h1>Current Projects</h1>
-            <p></p>
-            <h3>Restoration of Meade Model 290P: 2.4" (60mm) Equatorial Refracting Telescope</h3>
-            <div class="blog-content">
-                <img src="./kii/keala_kii/telescope2.jpeg" alt="post-3">
-                <div class="blog-title">
-                    <h3>Telescope Restoration</h3>
-                    <button class="btn btn-blog">Magnify</button>
-                    <span>2 minutes</span>
+            <div class="site-background">
+                <h3>Restoration of Meade Model 290P: 2.4" (60mm) Equatorial Refracting Telescope</h3>
+                <div class="blog-content">
+                    <img src="./kii/keala_kii/telescope2.jpeg" alt="post-3">
+                    <div class="blog-title">
+                        <h3>Telescope Restoration</h3>
+                        <button class="btn btn-blog">Magnify</button>
+                        <span>2 minutes</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -152,22 +400,17 @@
 <script src="./JS/main.js"></script>
 
 <script>
-    $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:false,
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:3
-            },
-            1000:{
-                items:3
-            }
+    // Toggle navigation menu
+    $('.toggle-collapse').on('click', function() {
+        $('.nav-items').toggleClass('collapse');
+    });
+
+    // Close navigation menu on click outside
+    $(document).on('click', function(e) {
+        if (!$(e.target).closest('.nav').length) {
+            $('.nav-items').removeClass('collapse');
         }
-    })
+    });
 </script>
 
 </body>

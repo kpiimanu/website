@@ -153,22 +153,17 @@
 <script src="./JS/main.js"></script>
 
 <script>
-    $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:false,
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:3
-            },
-            1000:{
-                items:3
-            }
+    // Toggle navigation menu
+    $('.toggle-collapse').on('click', function() {
+        $('.nav-items').toggleClass('collapse');
+    });
+
+    // Close navigation menu on click outside
+    $(document).on('click', function(e) {
+        if (!$(e.target).closest('.nav').length) {
+            $('.nav-items').removeClass('collapse');
         }
-    })
+    });
 </script>
 
 </body>

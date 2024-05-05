@@ -15,13 +15,12 @@
 
     <!-- Custom Style -->
     <link rel="stylesheet" href="./CSS/style.css">
-
 </head>
 <body>
 
 <!-- Navigation -->
 <nav class="nav">
-    <div class="nav-menu flex-row">
+    <div class="container flex-row">
         <div class="nav-brand">
             <a href="#" class="text-gray">Kilo Lani</a>
         </div>
@@ -30,26 +29,16 @@
                 <i class="fas fa-bars"></i>
             </div>
         </div>
-        <div>
-            <ul class="nav-items">
-                <li class="nav-link">
-                    <a href="./index.html">Home</a>
-                </li>
-                <li class="nav-link">
-                    <a href="./inspiration.html">Inspiration</a>
-                </li>
-                <li class="nav-link">
-                    <a href="./resources.html">Resources</a>
-                </li>
-                <li class="nav-link">
-                    <a href="./projects.html">My Projects</a>
-                </li>
-                <li class="nav-link">
-                    <a href="#">Online Portfolio</a>
-                </li>
+        <div class="nav-items">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./inspiration.html">Inspiration</a></li>
+                <li><a href="./resources.html">Resources</a></li>
+                <li><a href="./projects.html">My Projects</a></li>
+                <li><a href="#">Online Portfolio</a></li>
             </ul>
         </div>
-        <div class="social text-gray">
+        <div class="social">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
@@ -64,53 +53,28 @@
 
     <!-- Site Title -->
     <section class="site-title">
-        <div class="site-background">
+        <div class="container">
             <h1>O nā hōkū no nā kiu o ka lani.</h1>
-            <h3>"The stars are the eyes of heaven."</h3>
-            <h3>Hawaiian Sailing Proverb (Pukui, 1983)</h3>
+            <p class="text-gray">"The stars are the eyes of heaven."</p>
+            <p class="text-gray">Hawaiian Sailing Proverb (Pukui, 1983)</p>
             <a href="./resources.html" class="btn">Explore</a>
         </div>
     </section>
     <!-- End Site Title -->
 
     <!-- Blog Carousel -->
-    <section>
-        <div class="blog">
-            <div class="container">
-                <div class="owl-carousel owl-theme blog-post">
-                    <div class="blog-content">
-                        <img src="./kii/keala_kii/littlemoon.jpeg" alt="post-1">
-                        <div class="blog-title">
-                            <h3>Nā Pō Mahina</h3>
-                            <button class="btn btn-blog">Moon Phases</button>
-                            <span>2 minutes</span>
-                        </div>
-                    </div>
-                    <div class="blog-content">
-                        <img src="./kii/keala_kii/purple.jpeg" alt="post-2">
-                        <div class="blog-title">
-                            <h3>Nā Huihui</h3>
-                            <button class="btn btn-blog">Constellations</button>
-                            <span>2 minutes</span>
-                        </div>
-                    </div>
-                    <div class="blog-content">
-                        <img src="./kii/keala_kii/telescope2.jpeg" alt="post-3">
-                        <div class="blog-title">
-                            <h3>Telescope Restoration</h3>
-                            <button class="btn btn-blog">Magnify</button>
-                            <span>2 minutes</span>
-                        </div>
-                    </div>
-                    <div class="blog-content">
-                        <img src="./kii/keala_kii/quill.jpeg" alt="post-4">
-                        <div class="blog-title">
-                            <h3>Mo'omana'o Kilo Hōkū</h3>
-                            <button class="btn btn-blog">Kilo</button>
-                            <span>2 minutes</span>
-                        </div>
+    <section class="blog">
+        <div class="container">
+            <div class="owl-carousel owl-theme blog-post">
+                <div class="blog-content">
+                    <img src="./kii/keala_kii/littlemoon.jpeg" alt="post-1">
+                    <div class="blog-title">
+                        <h3>Nā Pō Mahina</h3>
+                        <button class="btn btn-blog">Moon Phases</button>
+                        <span>2 minutes</span>
                     </div>
                 </div>
+                <!-- More Slides Here -->
             </div>
         </div>
     </section>
@@ -118,66 +82,27 @@
 
     <!-- Site Content -->
     <section class="container">
-        <div class="site-content">
-            <div class="posts">
-                <div class="post-content">
-                    <div class="post-image">
-                        <img src="./kii/keala_kii/kamaehu.png" class="img" alt="blog1">
-                        <div class="post-info flex-row">
-                            <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
-                            <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;February 21, 2023</span>
-                            <span>No Comments</span>
-                        </div>
+        <div class="posts">
+            <div class="post-content">
+                <div class="post-image">
+                    <img src="./kii/keala_kii/kamaehu.png" class="img" alt="blog1">
+                    <div class="post-info">
+                        <span><i class="fas fa-user text-gray"></i>&nbsp; Admin</span>
+                        <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp; February 21, 2023</span>
+                        <span>No Comments</span>
                     </div>
-                    <div class="post-title">
-                        <a href="#">Scored a free Meade model 290P telescope! Its missing some parts but I think we can fix it.</a>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                            ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
-                        </p>
-                        <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
-                    </div>
-                    <hr>
                 </div>
-                <div class="post-content">
-                    <div class="post-image">
-                        <img src="./kii/keala_kii/moondial.png" class="img" alt="blog2">
-                        <div class="post-info flex-row">
-                            <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
-                            <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;March 2, 2023</span>
-                            <span>No Comments</span>
-                        </div>
-                    </div>
-                    <div class="post-title">
-                        <a href="#">Had this Moon Phase Tracker custom built! Check it out</a>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                            ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
-                        </p>
-                        <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
-                    </div>
-                    <hr>
+                <div class="post-title">
+                    <a href="#">Scored a free Meade model 290P telescope! Its missing some parts but I think we can fix it.</a>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                        ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+                    </p>
+                    <button class="btn post-btn">Read More <i class="fas fa-arrow-right"></i></button>
                 </div>
-                <div class="post-content">
-                    <div class="post-image">
-                        <img src="./kii/keala_kii/star.gif" class="img" alt="blog3">
-                        <div class="post-info flex-row">
-                            <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
-                            <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;April 10, 2023</span>
-                            <span>No Comments</span>
-                        </div>
-                    </div>
-                    <div class="post-title">
-                        <a href="#">Unbelievable Star Shower last night! Check out the Video</a>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                            ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
-                        </p>
-                        <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
-                    </div>
-                    <hr>
-                </div>
+                <hr>
             </div>
+            <!-- More Posts Here -->
         </div>
     </section>
     <!-- End Site Content -->
@@ -188,51 +113,17 @@
 <!-- Footer -->
 <footer class="footer">
     <div class="container">
-        <!-- About Me -->
         <div class="about-us">
             <h2>About Me</h2>
             <p>My name is Keala and I initially created this kilo lani blog as my final project for Harvard Univeristyʻs CS50 Course.
                 I am hoping to continue to build on this blog as I not only pursue astronomy but programming as well.
             </p>
         </div>
-        <!-- Newsletter -->
-        <div class="newsletter">
-            <h2>Newsletter</h2>
-            <p>Stay Updated</p>
-            <div class="form-element">
-                <input type="text" class="input-element" placeholder="Email">
-                <button class="btn form-btn" type="submit">Subscribe</button>
-            </div>
-        </div>
-        <!-- Instagram -->
-        <div class="instagram">
-            <h2>Instagram</h2>
-            <div class="flex-row">
-                <img src="./kii/keala_kii/insta1.jpg" alt="insta1">
-                <img src="./kii/keala_kii/insta2.jpg" alt="insta2">
-                <img src="./kii/keala_kii/insta3.jpg" alt="insta3">
-            </div>
-        </div>
-        <!-- Follow Me -->
-        <div class="follow">
-            <h2>Follow Me</h2>
-            <p>Lets Connect!</p>
-            <div>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.youtube.com/channel/UC3TAP5vkfbnbsaEAU9zr6TQ"><i class="fab fa-youtube"></i></a>
-            </div>
-        </div>
+        <!-- More Footer Sections Here -->
     </div>
-    <!-- Rights -->
-    <div class="rights flex-row">
-        <h4 class="text-gray">
-            Copyright ©2023 All rights reserved | Made by Keala Piimanu
-            <a href="#"></a>
-        </h4>
+    <div class="rights">
+        <h4 class="text-gray">Copyright ©2023 All rights reserved | Made by Keala Piimanu</h4>
     </div>
-    <!-- Move Up Button -->
     <div class="move-up">
         <span><i class="fas fa-arrow-circle-up-2x"></i></span>
     </div>

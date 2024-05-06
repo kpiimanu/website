@@ -330,12 +330,14 @@
 <!-- Footer -->
 <footer class="footer">
     <div class="container">
+        <!-- About Me -->
         <div class="about-us">
             <h2>About Me</h2>
             <p>My name is Keala and I initially created this kilo lani blog as my final project for Harvard University's CS50 Course.
                 I am hoping to continue to build on this blog as I not only pursue astronomy but programming as well.
             </p>
         </div>
+        <!-- Newsletter -->
         <div class="newsletter">
             <h2>Newsletter</h2>
             <p>Stay Updated</p>
@@ -344,6 +346,7 @@
                 <button class="btn form-btn" type="submit">Subscribe</button>
             </div>
         </div>
+        <!-- Instagram -->
         <div class="instagram">
             <h2>Instagram</h2>
             <div class="flex-row">
@@ -352,11 +355,12 @@
                 <img src="./kii/keala_kii/stellarium3.png" alt="insta3">
             </div>
             <div class="flex-row">
-                <img src="./kii/keala_kii//nahiku.png" alt="insta4">
+                <img src="./kii/keala_kii/nahiku.png" alt="insta4">
                 <img src="./kii/keala_kii/iwa.png" alt="insta5">
                 <img src="./kii/keala_kii/heihei.png" alt="insta6">
             </div>
         </div>
+        <!-- Follow Me -->
         <div class="follow">
             <h2>Follow Me</h2>
             <p>Lets Connect!</p>
@@ -368,13 +372,45 @@
             </div>
         </div>
     </div>
+    <!-- Rights -->
     <div class="rights flex-row">
-        <h4 class="text-gray">Copyright ©2023 All rights reserved | Made by Keala Piimanu</h4>
+        <h4 class="text-gray">
+            Copyright ©2023 All rights reserved | Made by Keala Piimanu
+            <a href="#"></a>
+        </h4>
     </div>
+    <!-- Move Up Button -->
     <div class="move-up">
         <span><i class="fas fa-arrow-circle-up-2x"></i></span>
     </div>
 </footer>
+<!-- End Footer -->
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!-- Custom Javascript -->
+<script src="./JS/main.js"></script>
+
+<script>
+    // Toggle navigation menu
+    $('.toggle-collapse').on('click', function() {
+        $('.nav-items').toggleClass('collapse');
+    });
+
+    // Close navigation menu on click outside
+    $(document).on('click', function(e) {
+        if (!$(e.target).closest('.nav').length) {
+            $('.nav-items').removeClass('collapse');
+        }
+    });
+</script>
+
+</body>
+</html>
 <!-- End Footer -->
 
 <!-- jQuery -->
